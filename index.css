@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poiret+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    background-color: whitesmoke;
+    /*background: rgb(213, 230, 235);*/
+    
+  background: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 183, 249))
+}
+header{
+    background-color: whitesmoke;
+}
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border:1px solid black ;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+button:hover{
+    background-color: rgb(0, 0, 0,0.1);
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    background: white;
+
+}
+.nav button{
+    font-family:inherit ;
+}
+.create-box{
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius:0px 30% 0 25%;
+    background-color: rgb(245, 237, 237);
+    box-shadow:0 8px 10px 3px rgba(215, 45, 45, 0.9) ;
+}
+
+.create-box textarea{
+    width: 100%;
+    border-radius:5px ;
+    font-family: cursive;
+    border: 1px solid lightgrey;
+}
+
+.create-box button{
+    width: fit-content;
+}
+.flashcards{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.flashcard{
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: rgb(245, 237, 237);
+    box-shadow:0 8px 10px 3px rgba(215, 45, 45, 0.9) ;
+    border-radius: 0px 25% 0 25%;
+}
+
+.flashcard h2{
+    font-size: 1rem;
+
+}
+@media(max-width:768px){
+    .flashcard{
+        margin: auto;
+    }
+    .flashcard{
+        margin-top: 10px;
+        margin-bottom:10px ;
+    }
+}
+@media(max-width:480px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .create-box{
+        width: 100%;
+     
+    }
+    .flashcard{
+        width: 100%;
+       
+    }
+}
+
+
+
